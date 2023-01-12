@@ -17,7 +17,7 @@ def create_contact(request):
             'form': ContactForm()
         }
 
-        return render(request, 'contacts/create_contacts.html', context=context)
+        return render(request, 'contacts/contacts-create.html', context=context)
 
     elif request.method == 'POST':
         form = ContactForm(request.POST)
@@ -37,4 +37,4 @@ def create_contact(request):
                 'form_errors': form.errors,
                 'form': ContactForm()
             }
-            return render(request, 'contacts/create_contacts.html', context=context)
+            return render(request, 'contacts/contacts-create.html', context=context)
