@@ -14,6 +14,9 @@
             <h5 class="list-group-item">{{contact.name}}</h5>
             <p class="list-group-item">Dirección: {{contact.address}}</p>
             <p class="list-group-item">Telefono: {{contact.phone_number}}</p>
+            <p class="list-group-item">Email: {{contact.email}}</p>
+            <a href="/contacts/update-contact/{{contact.id}}/" class="btn btn-info">Actualizar</a>
+            <a href="/contacts/delete-contact/{{contact.id}}/" class="btn btn-danger">Eliminar</a>
             <p></p>
            
         </div>

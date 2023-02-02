@@ -5,5 +5,11 @@
 {% endblock %}
 
 {% block content %}
-    <h1></h1>
+    <h1>Bienvenido al sistema de AGENDA</h1>
+
+    {% if message %}
+        <h2>{{message}}</h2>
+    {% endif %}
+    
+
 {% endblock %}

@@ -45,6 +45,7 @@ THIRD_APPS = [
 
 MY_APPS = [
     'contacts',
+    'users',
 ]
 
 INSTALLED_APPS = BASE_APPS + THIRD_APPS + MY_APPS
